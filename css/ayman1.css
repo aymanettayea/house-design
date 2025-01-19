@@ -1,0 +1,162 @@
+.container_fluid{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #151515;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    background: transparent;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-right: 90px;
+    background: transparent;
+}
+nav ul li {
+    list-style: none;
+    background: transparent;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    background: transparent;
+    transition: .7s;
+}
+nav ul li a:hover {
+    color: gold;
+    background: transparent;
+}
+.icon {
+    display: flex;
+    background: transparent;
+    gap: 20px;
+}
+nav h1 {
+    color: white;
+    background: transparent;
+}
+.icon i {
+    color: gold;
+    margin-top: 13px;
+    background: transparent;
+    font-size: x-large;
+}
+nav button{
+    width: 120px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: gold;
+    border: none;
+    box-shadow: goldenrod 2px 3px 7px 6px;
+}
+nav button i{
+    color: black;
+    background: transparent;
+    text-align: center;
+    font-size: large;
+    transition: .7s;
+}
+nav button i:hover{
+    color: goldenrod;
+    
+}
+nav button:hover{
+    background-color: rgb(23, 23, 23);
+    transition: .7s;
+    
+}
+#home{
+    margin-top: 90px;
+    background: transparent;
+}
+.honey{
+    float:right
+}
+.honey img{
+    width: 600px;
+    height: 600px;
+  
+}
+.title{
+    position: absolute;
+    top: 200px;
+    left: 180px;
+    background: transparent;
+} 
+.title h1{
+    color: white;
+    font-size: 4.5rem;
+    font-weight: bold;
+    background: transparent;
+}
+.span{
+    color: goldenrod;
+}
+.explore {
+    position: absolute;
+    top: 500px;
+    left: 180px;
+    background: transparent;
+}
+.explore button{
+    padding-inline: 20px;
+    border-radius: 20px;
+    background-color: rgb(38, 38, 38);
+    border: none;
+    color: goldenrod;
+    font-weight: bold;
+    margin-right: 20px;
+    transition: .7s;
+}
+.explore button:hover{
+    background-color: gold;
+    color: black;
+    
+}
+.explore a{
+    color: goldenrod;
+} 
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.time,.local,.phone {
+    background-color: rgb(37, 37, 37);
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    height: 130px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+  
+}
+.container i{
+    color: goldenrod;
+    font-size: 1.5rem;
+    background: transparent;
+}
+.container span {
+    color: white;
+    margin-top: 10px;
+    background: transparent;
+}
+.container p{
+    color: rgb(72, 72, 72);
+    font-size: 10px;
+    font-weight: bold;
+    background: transparent;
+}
