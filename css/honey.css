@@ -1,34 +1,134 @@
-/***********************************
-************ ARTICAL 1 *************
-************************************/
+/**************************************************************
+*************************** ARTICAL 1 *************************
+***************************************************************/
 
-article {
-    background-color: black;
-    color: white;
-}
-
-article .art1 {
-    display: flex;
-    min-height: 100vh;
+.art1 {
+    display:flex;
+    justify-content: center;
     align-items: center;
-    gap:40px;
-
+    gap:20px;
+    width:1200px;
+    margin:0 auto;
+    min-height:100vh;
 }
-
-.img_about {
-    width: 100%;
+.img_about{
+    width:50%;
+    object-fit:contain;
+    animation:img 2s ease-in;
+    animation-timeline: view();
+    animation-range:entry 0%;
 }
 .about_text h1{
-    font-size: 3em;
+    font-size:3rem;
+    font-weight:bolder;
 }
-.para_about{
+.about_text p{
+    font-size:1.1rem;
     color:gray;
-    margin:20px 0 20px 0;
+    margin-top: 15px;
 }
-article .bt {
+article .btn{
+    margin-top: 30px;
+}
+.btn .button{
+    background:grey;
+    padding:10px 25px;
     text-decoration:none;
     color:orange;
-    background:rgba(128, 128, 128, 0.201);
-    padding: 10px 20px;
-    border-radius: 20px;
+    border-radius:20px; 
 }
+.btn .button:hover{
+    background:orange;
+    color:white;
+    transition: background 0.9s ease-out .3s;
+}
+@keyframes img{
+    0%{
+        opacity:0;
+        transform:translate(-250px,0);
+    }
+    100%{
+        opacity:1;
+        transform:translate(0,0);
+    }
+}
+.about_text{
+    animation: right 2s ease-in;
+    animation-timeline:view();
+    animation-range:entry 0%;
+}
+@keyframes right{
+    0%{
+        opacity:.5;
+        transform:translate(0,200px);
+    }
+    
+    100%{
+        opacity:1;
+        transform:translate(0,0);
+    }
+}
+
+/**************************************************************
+*************************** ARTICAL 2 *************************
+***************************************************************/
+
+ article .titles_shop{
+    text-align: center;
+ }
+ .tit_shop{
+     color:orange;
+     font-size:2rem;
+ }
+article .cards{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+    width:1000px;
+    margin:90px auto;
+}
+article .img_card1{
+    width:80%;
+}
+article .card_1{
+    border: 1px solid #212121;
+    padding:20px;
+    border-radius: 25px;
+}
+ .shop{
+    min-height:100vh;
+}
+.prc_ord{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price{
+    color:orange;
+}
+.heart{
+    font-size: 2rem;
+    background:none;
+    padding:0px 15px;
+    text-decoration:none;
+    color:white;
+    border:none;
+}
+.heart:visited {
+    font-size: 2rem;
+    background: #444141;
+    padding:10px 25px;
+    text-decoration:none;
+    color:orange;
+    border:none;
+}
+.card_1 a{
+    text-decoration: none;
+    color: white;
+    background: #444141 ;
+    padding:5px 10px;
+    border-radius:25px; 
+}
+
+
