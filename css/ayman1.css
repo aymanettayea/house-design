@@ -103,6 +103,8 @@ nav button:hover {
     background: transparent;
 }
 
+
+
 .honey {
     float: right
 }
@@ -133,6 +135,11 @@ nav button:hover {
     color: goldenrod;
 }
 
+.explore i{
+    color:goldenrod;
+    background:none;
+}
+
 .explore {
     position: absolute;
     top: 500px;
@@ -141,7 +148,7 @@ nav button:hover {
 }
 
 .explore button {
-    padding-inline: 20px;
+    padding: 10px 20px;
     border-radius: 20px;
     background-color: rgb(38, 38, 38);
     border: none;
@@ -150,8 +157,20 @@ nav button:hover {
     margin-right: 20px;
     transition: .7s;
 }
+.explore i {
+    border-radius: 20px;
+    border: none;
+    color: goldenrod;
+    font-weight: bold;
+    transition: .7s;
+}
 
 .explore button:hover {
+    background-color: gold;
+    color: black;
+
+}
+.explore i:hover {
     background-color: gold;
     color: black;
 

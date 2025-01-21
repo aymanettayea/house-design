@@ -1,71 +1,79 @@
 /**************************************************************
 *************************** ARTICAL 1 *************************
 ***************************************************************/
-
 .art1 {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    gap:20px;
-    width:1200px;
+    gap: 20px;
+    width: 1200px;
     margin:0 auto;
-    min-height:100vh;
+    min-height: 100vh;
 }
-.img_about{
-    width:50%;
-    object-fit:contain;
-    animation:img 2s ease-in;
+.img_about {
+    width: 100%;
+    object-fit: contain;
+    animation: img 2s ease-in;
     animation-timeline: view();
-    animation-range:entry 0%;
+    animation-range: entry 0%;
 }
-.about_text h1{
-    font-size:3rem;
-    font-weight:bolder;
+
+.about_text h1 {
+    font-size: 3rem;
+    font-weight: bolder;
 }
-.about_text p{
-    font-size:1.1rem;
-    color:gray;
+
+.about_text p {
+    font-size: 1.1rem;
+    color: gray;
     margin-top: 15px;
 }
-article .btn{
+
+article .btn {
     margin-top: 30px;
 }
-.btn .button{
-    background:grey;
-    padding:10px 25px;
-    text-decoration:none;
-    color:orange;
-    border-radius:20px; 
+
+.btn .button {
+    background: grey;
+    padding: 10px 25px;
+    text-decoration: none;
+    color: orange;
+    border-radius: 20px;
 }
-.btn .button:hover{
-    background:orange;
-    color:white;
+
+.btn .button:hover {
+    background: orange;
+    color: white;
     transition: background 0.9s ease-out .3s;
 }
-@keyframes img{
-    0%{
-        opacity:0;
-        transform:translate(-250px,0);
+
+@keyframes img {
+    0% {
+        opacity: 0;
+        transform: translate(-250px, 0);
     }
-    100%{
-        opacity:1;
-        transform:translate(0,0);
+
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
     }
 }
-.about_text{
+
+.about_text {
     animation: right 2s ease-in;
-    animation-timeline:view();
-    animation-range:entry 0%;
+    animation-timeline: view();
+    animation-range: entry 0%;
 }
-@keyframes right{
-    0%{
-        opacity:.5;
-        transform:translate(0,200px);
+
+@keyframes right {
+    0% {
+        opacity: 0;
+        transform: translate(0, -200px);
     }
-    
-    100%{
-        opacity:1;
-        transform:translate(0,0);
+
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
     }
 }
 
@@ -73,60 +81,173 @@ article .btn{
 *************************** ARTICAL 2 *************************
 ***************************************************************/
 
- article .titles_shop{
+article .titles_shop {
     text-align: center;
- }
- .tit_shop{
-     color:orange;
-     font-size:2rem;
- }
-article .cards{
-    display:flex;
+    
+}
+
+.tit_shop {
+    color: orange;
+    font-size: 2rem;
+}
+
+article .cards {
+    display: flex;
     align-items: center;
     justify-content: center;
-    gap:10px;
-    width:1000px;
-    margin:90px auto;
+    gap: 10px;
+    margin: 80px auto;
+    min-width: 100vh;
+    animation: square 2s ease-in;
+    animation-timeline:view();
+    animation-range: entry 0% cover 40%;
 }
-article .img_card1{
-    width:80%;
+
+article .img_card1 {
+    width: 100%;
+    background-color: transparent;
 }
-article .card_1{
-    border: 1px solid #212121;
-    padding:20px;
+
+article .card_1 {
+    border: 1px solid grey;
+    padding: 20px;
+    background-color: #212121;
     border-radius: 25px;
+    width: 18rem;
 }
- .shop{
-    min-height:100vh;
+
+.shop {
+    min-height: 100vh;
 }
-.prc_ord{
+
+.prc_ord {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: transparent;
+
 }
-.price{
-    color:orange;
+
+.price {
+    color: orange;
+    background-color: transparent;
 }
-.heart{
+
+.heart {
     font-size: 2rem;
-    background:none;
-    padding:0px 15px;
-    text-decoration:none;
-    color:white;
-    border:none;
-}
-.heart:visited {
-    font-size: 2rem;
-    background: #444141;
-    padding:10px 25px;
-    text-decoration:none;
-    color:orange;
-    border:none;
-}
-.card_1 a{
+    background: none;
+    padding: 0px 15px;
     text-decoration: none;
     color: white;
-    background: #444141 ;
-    padding:5px 10px;
-    border-radius:25px; 
+    border: none;
+}
+
+.heart:focus-within {
+    font-size: 2rem;
+    background: none;
+    text-decoration: none;
+    color: orange;
+    border: none;
+}
+
+.cards h2,
+p {
+    background-color: transparent;
+}
+
+.card_1 a {
+    text-decoration: none;
+    color: white;
+    background: #444141;
+    padding: 5px 10px;
+    border-radius: 25px;
+}
+
+.card_1 a:hover {
+    background: orange;
+    color: white;
+    transition: all 0.9s ease-out .1s;
+}
+
+.bn {
+    background: grey;
+    padding: 10px 25px;
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    margin-bottom:90px;
+}
+.butn{
+    display:flex;
+    justify-content:center;
+    animation: square 2s ease-in;
+    animation-timeline:view();
+    animation-range: entry 0%;
+    
+}
+
+.bn:hover {
+    background: orange;
+    color: white;
+    transition: all 0.9s ease-out .3s;
+}
+@keyframes square {
+    0%{
+        opacity:0;
+        scale:.1;
+        transfrom:tarnslate(0,-400px);
+    }
+    100%{
+        opacity:1;
+        transform:translate(0,0);
+    }
+}
+
+/**************************************************************
+*************************** ARTICAL 3 *************************
+***************************************************************/
+#rate{
+    min-height:65vh;
+}
+.titles_cust{
+    text-align: center;
+}
+.tit_cust{
+    color:orange;
+    font-size:2rem;
+}
+.clis{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    width:1200px;
+    margin:90px auto;
+}
+ .client_1 img{
+    object-fit:cover;
+    border-radius:50%;
+}
+.client_1{
+    background:#212121;
+    width:fit-content;
+    height:auto;
+    border:2px solid rgba(128, 128, 128, 0.316);
+    padding:10px;
+    border-radius:15px;
+    
+}
+.pht_name{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap:20px;
+}
+.client_1 div,h4,.stars{
+    background-color:#212121 ;
+}
+.client_1 p{
+    color:gray;
+}
+.stars{
+    color:gold;
 }
